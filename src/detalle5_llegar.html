@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
+    <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - DETALLE-COMO LEGAR</title>
+    <!-- vinculamos archivos CSS y JS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+    <!-- atribución de favicon -->
+    <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
+  </head>
+  <body>    
+    <include src="./src/header.html"></include><!-- insertamos archivo HTML de cabecera -->
+    <!-- contenido de la página DETALLE -->
+    <p>Estamos dentro de la sección de <u>DETALLE - CÓMO LLEGAR</u></p>    
+    <main><!-- Inicio cuerpo de la página -->
+      <p><h3>CÓMO LLEGAR</h3></p>
+      <article>
+        <section><!-- sección de mapa del municipio -->
+          <p>
+            En esta sección se muestra el mapa de situación del municipio <q>Santibáñez el Bajo</q>, así como también con más detalle cómo llegar al mismo.
+          </p>
+          <p id="espaciado">&nbsp;</p><!-- espaciado de párrafo en blanco -->
+          <p>
+            <!-- Sección del mapa OpenStreetMap del municipio -->
+            <iframe id="cartografico" width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-6.2444400787353525%2C40.16824891761024%2C-6.211910247802735%2C40.18411931650587&amp;layer=mapnik" style="border: 1px solid black; align-content: center;"></iframe><br/><small id="cartografico"><a href="https://www.openstreetmap.org/#map=15/40.17618/-6.22818" target="_blank">Ver el mapa más grande</a></small>      
+          </p>
+        </section>
+      </article>
+      <p id="espaciado">&nbsp;</p><!-- espaciado de párrafo en blanco -->
+      <a href="categoria.html" id="boton_detalle">Volver</a><!-- botón para volver a la página de Categoría -->
+    </main><!-- Fin cuerpo de la página -->
+    <include src="./src/footer.html"></include><!-- vincula archivo footer.html con el contenido del pie de página -->  
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>    
+    <meta charset="utf-8"/><!-- configuración de caractéres UTF-8 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><!-- configuramos para dispositivos móviles/tabletas -->
+    <title>Boilerplate Web del municipio Santibáñez el Bajo - UOC-P1. Desarrollo de una web (eblancofe) - PRINCIPAL</title>
+    <!-- vinculamos archivos CSS y JS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+    <!-- atribución de favicon -->
+    <!-- <a target="_blank" href="https://icons8.com/icon/60044/village">Village</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <link rel="shortcut icon" href="./icons/favicon.png"><!-- inserción de favicon -->
+  </head>
+  <body>    
+    <include src="./src/header.html"></include><!-- insertamos archivo HTML de cabecera -->
+    <!-- contenido de la página PRINCIPAL-INDEX -->
+    <main><!-- Inicio cuerpo de la página -->
+      <article>
+        <p>
+          Bienvenidos a la página principal del portal Web del municipio de <q>Santibáñez el Bajo</q>. 
+        </p>
+        <p>
+          En esta página podrá encontrar una serie de enlaces a distintas partes del portal Web.
+          Para ello debe de ir pulsando sobre la barra del menú de navegación que se encuentra en la parte superior de la página, y desde cualquier enlace puede empezar a navegar en las 
+          diversas páginas de este <q>Boilerplate</q>.
+        </p>
+        <p>
+          Una pequeña muestra del contenido que se va a encontrar dentro del portal Web, es el siguiente:      
+        </p>
+      </article>
+      <section><!-- sección de imágenes --> 
+        <div class="row">
+          <div class="column_portada left_portada">
+            <p>
+              <figure>
+                <img src="./images/01-tejados.jpg" width="240" height="180" alt="Tejados de Santibáñez el Bajo" title="Tejados de Santibáñez el Bajo">
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Tejados de Santibáñez el Bajo.</figcaption>
+              </figure>
+            </p>
+          </div>
+          <div class="column_portada right_portada">
+              <p>
+                <figure>
+                  <img src="./images/02-puerta.jpg" width="240" height="180" alt="Puerta de monumento histórico" title="Puerta de monumento histórico">
+                  <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Puerta de monumento histórico.</figcaption>
+                </figure>
+              </p>
+          </div>
+          <div class="column_portada middle_portada">
+            <p>
+              <figure>
+                <img src="./images/03-montes.jpg" width="240" height="180" alt="Paisaje montañoso de montes de Santibáñez el Bajo" title="Paisaje montañoso de montes de Santibáñez el Bajo">
+                <figcaption><b>Fuente:</b> Imagen de <q>Eugenio Blanco Fern&aacute;ndez</q>. Paisaje montañoso de montes de Santibáñez el Bajo.</figcaption>
+              </figure>
+            </p>
+          </div>
+          <div class="column_portada middle_portada">
+            <p>
+              <figure>
+                <img src="./images/04-dehesa.jpg" width="240" height="180" alt="Dehesa del municipio de Santibáñez el Bajo" title="Dehesa del municipio de Santibáñez el Bajo">
+                <figcaption><b>Fuente:</b> Imagen propia. Dehesa del municipio de Santibáñez el Bajo.</figcaption>
+              </figure>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section><!-- sección de selección de menú del portal Web --> 
+        <p>
+          El portal Web se compone de las siguientes páginas:
+          <dl>
+            <dt><u><a id="enlaces_rectangulo" href="./portada.html">Portada</a></u></dt>
+            <dt><u><a id="enlaces_rectangulo" href="./categoria.html">Categoría</a></u></dt>
+              <dd>- <a id="enlaces_rectangulo" href="./detalle1_historia.html">Historia del lugar</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle2_eventos.html">Listado de eventos</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle3_gastro.html">Gastronomía</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle4_lugares.html">Lugares de interés</a></dd>        
+              <dd>- <a id="enlaces_rectangulo" href="./detalle5_llegar.html">Como llegar</a></dd>
+            <dt><u><a id="enlaces_rectangulo" href="./presentacion.html">Presentación</a></u></dt>
+            <dt><u><a id="enlaces_rectangulo" href="./enlaces.html">Enlaces</a></u></dt>
+          </dl>
+        </p>
+      </section>
+    </main><!-- Fin cuerpo de la página -->
+    <include src="./src/footer.html"></include><!-- vincula archivo footer.html con el contenido del pie de página -->  
+  </body>
+</html>
